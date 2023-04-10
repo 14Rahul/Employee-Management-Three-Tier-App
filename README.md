@@ -12,10 +12,10 @@
 
 App
 
-- git clone https://github.com/Shubhamb7/employee-mgmt.git
+- git clone https://github.com/14Rahul/Employee-Management-Three-Tier-App.git
 - sudo apt-get install maven default-jre
 - vi /employee-mgmt/springboot-backend/src/main/resources/application.properties and add dbip and port
-	- spring.datasource.url=jdbc:mysql://172.31.40.49:3306/kube?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false&user=tom$password=root
+	- spring.datasource.url=jdbc:mysql://localhost:3306/kube?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false&user=tom$password=root
 - vi /employee-mgmt/springboot-backend/src/main/java/net/javaguides/springboot/controller/EmployeeController.java
 	- @CrossOrigin(origin={"*"})
 - /employee-mgmt/springboot-backend/
@@ -29,7 +29,7 @@ Web
 - sudo apt-get install npm
 - sudo npm update npm -g
 - vi /employee-mgmt/react-frontend/src/services/EmployeeService.js
-	- const EMPLOYEE_API_BASE_URL = "http://app.coetesting.tk/employees";
+	- const EMPLOYEE_API_BASE_URL = "http://localhost:8080/employees";
 - cd /employee-mgmt/react-frontend/
 - npm i
 - npm start$
